@@ -1,0 +1,74 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+
+<body style="background-color:powderblue;">
+<p><h1 align="center">SAWHNEY DEPARTMENTAL STORE </h1>
+<i class='fas fa-bell'></i>
+</p>
+
+
+<!-- Navigation BAR-->
+<nav class="w3-bar w3-black">
+  <a href="#HOME" class="w3-button w3-bar-item"><center> HOME  </center></a><a href="#IMAGES" class="w3-button w3-bar-item"><center> ABOUT</center></a>
+  <a href="#CONTACT" class="w3-button w3-bar-item"><center> CONTACT</center></a>
+ 
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="img\STORE1.jpeg"
+  style="width:50%">
+  <img class="mySlides" src="img\STORE2.jpeg"
+  style="width:50%">
+  <img class="mySlides" src="img\STORE3.jpeg"
+  style="width:50%">
+</section>
+
+<!-- SAWHNEY DEPARTMENTAL STORE -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">ALL RANGE OF GROCERY PRODUCTS </h2>
+  <p class="w3-opacity"><i>CLOSE TO YOUR HOME </i></p>
+  <p class="w3-justify">ORDER ON CALL OPTION AVAILABLE WITH COOPERATIVE OWNER.</p>
+</section>
+
+<!-- GROCERY PRODUCTS -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>SOFT DRINKS </p>
+    <img src="img\DRINKS.jpeg">
+   
+  </article>
+  <article class="w3-third">
+    <p>BEAUTY PRODUCTS </p>
+    <img src="img\BEAUTY.jpeg">
+   
+  </article>
+  <article class="w3-third">
+    <p> STATIONARY </p>
+    <img src="img\STATIONARY.jpeg">
+   
+  </article>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
